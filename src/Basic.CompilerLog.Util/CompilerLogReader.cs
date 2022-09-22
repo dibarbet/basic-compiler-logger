@@ -82,7 +82,8 @@ internal sealed class CompilerLogReader : IDisposable
 
         using var reader = new StreamReader(ZipArchive.OpenEntryOrThrow(GetCompilerEntryName(index)), ContentEncoding, leaveOpen: false);
         var compilerCall = ReadCompilerCallCore(reader);
-
+        Console.WriteLine("arguments:");
+        Console.WriteLine(string.Join(" ", compilerCall.Arguments));
         CommandLineArguments args = compilerCall.IsCSharp 
             ? CSharpCommandLineParser.Default.Parse(compilerCall.Arguments, Path.GetDirectoryName(compilerCall.ProjectFilePath), sdkDirectory: null, additionalReferenceDirectories: null)
             : VisualBasicCommandLineParser.Default.Parse(compilerCall.Arguments, Path.GetDirectoryName(compilerCall.ProjectFilePath), sdkDirectory: null, additionalReferenceDirectories: null);

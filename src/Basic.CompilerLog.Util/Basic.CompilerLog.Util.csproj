@@ -8,6 +8,7 @@
     <PublicSign>true</PublicSign>
     <DelaySign>false</DelaySign>
     <AssemblyOriginatorKeyFile>.\basiccompilerloggerpublic.snk</AssemblyOriginatorKeyFile>
+	<IncludeSymbols>true</IncludeSymbols>
   </PropertyGroup>
 
   <ItemGroup>
