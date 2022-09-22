@@ -7,6 +7,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Basic.CompilerLog.Util", "s
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Basic.CompilerLog", "src\Basic.CompilerLog\Basic.CompilerLog.csproj", "{3A77B0E1-F383-4663-BA36-A1855E7624DC}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{4EBC649C-4761-48EF-9944-70111CA984D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scratch", "src\Scratch\Scratch.csproj", "{F7D434FA-4C67-4354-89AA-80C2AA892D5F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,11 +25,18 @@ Global
 		{3A77B0E1-F383-4663-BA36-A1855E7624DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3A77B0E1-F383-4663-BA36-A1855E7624DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3A77B0E1-F383-4663-BA36-A1855E7624DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7D434FA-4C67-4354-89AA-80C2AA892D5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7D434FA-4C67-4354-89AA-80C2AA892D5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7D434FA-4C67-4354-89AA-80C2AA892D5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7D434FA-4C67-4354-89AA-80C2AA892D5F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {237FF09A-E587-485D-9894-30D24BACA531}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F7D434FA-4C67-4354-89AA-80C2AA892D5F} = {4EBC649C-4761-48EF-9944-70111CA984D9}
 	EndGlobalSection
 EndGlobal

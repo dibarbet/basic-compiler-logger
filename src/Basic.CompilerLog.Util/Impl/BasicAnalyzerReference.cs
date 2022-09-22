@@ -24,30 +24,34 @@ internal sealed class BasicAnalyzerReference : AnalyzerReference
 
     public override ImmutableArray<DiagnosticAnalyzer> GetAnalyzers(string language)
     {
-        var builder = ImmutableArray.CreateBuilder<DiagnosticAnalyzer>();
-        GetAnalyzers(builder, language);
-        return builder.ToImmutable();
+        return ImmutableArray<DiagnosticAnalyzer>.Empty;
+        // var builder = ImmutableArray.CreateBuilder<DiagnosticAnalyzer>();
+        // GetAnalyzers(builder, language);
+        // return builder.ToImmutable();
     }
 
     public override ImmutableArray<DiagnosticAnalyzer> GetAnalyzersForAllLanguages()
     {
-        var builder = ImmutableArray.CreateBuilder<DiagnosticAnalyzer>();
-        GetAnalyzers(builder, languageName: null);
-        return builder.ToImmutable();
+        return ImmutableArray<DiagnosticAnalyzer>.Empty;
+        // var builder = ImmutableArray.CreateBuilder<DiagnosticAnalyzer>();
+        // GetAnalyzers(builder, languageName: null);
+        // return builder.ToImmutable();
     }
 
     public override ImmutableArray<ISourceGenerator> GetGenerators(string language)
     {
-        var builder = ImmutableArray.CreateBuilder<ISourceGenerator>();
-        GetGenerators(builder, language);
-        return builder.ToImmutable();
+        return ImmutableArray<ISourceGenerator>.Empty;
+        // var builder = ImmutableArray.CreateBuilder<ISourceGenerator>();
+        // GetGenerators(builder, language);
+        // return builder.ToImmutable();
     }
 
     public override ImmutableArray<ISourceGenerator> GetGeneratorsForAllLanguages()
     {
-        var builder = ImmutableArray.CreateBuilder<ISourceGenerator>();
-        GetGenerators(builder, languageName: null);
-        return builder.ToImmutable();
+        return ImmutableArray<ISourceGenerator>.Empty;
+        // var builder = ImmutableArray.CreateBuilder<ISourceGenerator>();
+        // GetGenerators(builder, languageName: null);
+        // return builder.ToImmutable();
     }
 
     internal void GetAnalyzers(ImmutableArray<DiagnosticAnalyzer>.Builder builder, string? languageName)
